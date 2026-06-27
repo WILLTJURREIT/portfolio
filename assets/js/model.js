@@ -58,14 +58,14 @@ const PortfolioModel = {
         title: "Bigfoot Tracker Application",
         category: "web",
         icon: "bi-geo-alt",
-        image: "assets/img/projects/bigfoot-tracker.jpg",
+        image: "assets/img/projects/bigfoot_tracker_app.png",
         summary: "An interactive GIS mapping application using public data, REST APIs, Leaflet.js, JavaScript, PHP, HTML, and CSS.",
         tags: ["JavaScript", "PHP", "Leaflet.js", "REST APIs"],
         problem: "Location-based information needed to be displayed in a searchable, visual, and interactive way.",
         solution: "I built a responsive map application with markers, filters, API data handling, and dynamic user interaction.",
         outcome: "This project demonstrated API integration, geospatial visualization, JavaScript logic, and responsive interface design.",
-        demoUrl: "",
-        githubUrl: ""
+        demoUrl: "https://willtjurreit.github.io/bigfoot-tracker/",
+        githubUrl: "https://github.com/WILLTJURREIT/bigfoot-tracker"
       },
       {
         id: 3,
