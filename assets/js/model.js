@@ -51,6 +51,7 @@ const PortfolioModel = {
         solution: "I built core platform features using PHP, MySQL, JavaScript, sessions, login systems, and organized MVC-style code.",
         outcome: "This project strengthened my backend fundamentals, database design, SQL queries, testing, and debugging.",
         demoUrl: "",
+        noticeUrl: "reconstruction.html",
         githubUrl: ""
       },
       {
@@ -58,7 +59,7 @@ const PortfolioModel = {
         title: "Bigfoot Tracker Application",
         category: "web",
         icon: "bi-geo-alt",
-        image: "assets/img/projects/bigfoot-tracker-main-image.png",
+        image: "assets/img/projects/bigfoot_tracker_app5.png",
         summary: "An interactive GIS mapping application using public data, REST APIs, Leaflet.js, JavaScript, PHP, HTML, and CSS.",
         tags: ["JavaScript", "PHP", "Leaflet.js", "REST APIs"],
         problem: "Location-based information needed to be displayed in a searchable, visual, and interactive way.",
@@ -79,6 +80,7 @@ const PortfolioModel = {
         solution: "I contributed to development, planning, testing, documentation, and project coordination.",
         outcome: "This project showed collaboration, Agile workflow experience, and practical CMS development ability.",
         demoUrl: "",
+        noticeUrl: "reconstruction.html",
         githubUrl: ""
       },
       {
@@ -86,13 +88,14 @@ const PortfolioModel = {
         title: "Shopify E-Commerce Landing Pages",
         category: "cms",
         icon: "bi-cart-check",
-        image: "assets/img/projects/ecommerce-mystermash.png",
+        image: "assets/img/projects/ecommerce-mystermash2.png",
         summary: "Landing pages, wireframes, user journeys, and conversion-focused e-commerce design.",
         tags: ["Shopify", "Figma", "Marketing", "Conversion Design"],
         problem: "E-commerce pages need to quickly build trust and guide users toward action.",
         solution: "I created wireframes, landing page structures, and lead-generation concepts using Shopify and Figma.",
         outcome: "This strengthened my practical understanding of user flow, e-commerce design, and conversion-focused layouts.",
-        demoUrl: "https://mystermash.com/",
+        demoUrl: "",
+        websiteUrl: "https://mystermash.com/",
         githubUrl: ""
       },
       {
@@ -107,6 +110,7 @@ const PortfolioModel = {
         solution: "I developed competitor research, user personas, logos, landing page concepts, ads, and AI-assisted brand assets.",
         outcome: "This project built my ability to connect design, messaging, market research, and customer acquisition strategy.",
         demoUrl: "",
+        caseStudyUrl: "https://learndigital.dev/students/tysen-jurreit/",
         githubUrl: ""
       },
       {
@@ -120,7 +124,8 @@ const PortfolioModel = {
         problem: "The platform needed consistent messaging that could capture attention and grow an audience.",
         solution: "I created content strategies, messaging frameworks, and engagement systems using AI-assisted creation.",
         outcome: "The platform generated 200,000+ organic views and strengthened my understanding of attention, brand voice, and distribution.",
-        demoUrl: "https://www.facebook.com/profile.php?id=61580797105546",
+        demoUrl: "",
+        socialMediaUrl: "https://www.facebook.com/profile.php?id=61580797105546",
         githubUrl: ""
       }
     ]

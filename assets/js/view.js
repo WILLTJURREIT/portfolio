@@ -43,7 +43,7 @@ const PortfolioView = {
   
           <footer>
             <button class="btn btn-outline-light btn-sm view-project" type="button" data-project-id="${project.id}">
-              View Case Study
+              View Project
             </button>
           </footer>
         </article>
@@ -80,8 +80,65 @@ const PortfolioView = {
         </footer>
   
         <nav class="dialog-links" aria-label="Project links">
-          ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" class="btn btn-primary">Live Demo</a>` : ""}
-          ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="btn btn-outline-light">GitHub Repo</a>` : ""}
+
+  ${project.demoUrl ? `
+    <a
+      href="${project.demoUrl}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary">
+      Live Demo
+    </a>
+  ` : ""}
+
+  ${project.caseStudyUrl ? `
+    <a
+      href="${project.caseStudyUrl}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary">
+      View Case Study
+    </a>
+  ` : ""}
+
+   ${project.websiteUrl ? `
+    <a
+      href="${project.websiteUrl}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary">
+      View Ecommerce Website
+    </a>
+  ` : ""}
+
+  ${project.socialMediaUrl ? `
+    <a
+      href="${project.socialMediaUrl}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary">
+      View Facebook Page
+    </a>
+  ` : ""}
+
+  ${project.noticeUrl ? `
+  <a
+    href="${project.noticeUrl}"
+    class="btn btn-primary">
+    <i class="bi bi-tools"></i>
+    Project Update
+  </a>
+` : ""}
+
+  ${project.githubUrl ? `
+    <a
+      href="${project.githubUrl}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-outline-light">
+      GitHub Repo
+    </a>
+  ` : ""}
         </nav>
       `;
   
