@@ -1291,72 +1291,47 @@
 
 /* PORTFOLIO VIEW COUNTER */
 
-.hero-stats{
-    margin-top:2rem;
+.hero-stats {
+  margin-top: 2rem;
 }
 
 .visitor-counter{
-
     display:inline-flex;
     align-items:center;
-    gap:1rem;
-    padding:1rem 1.5rem;
-    border-radius:14px;
+    gap:.75rem;
+
+    padding:.85rem 1.2rem;
+
     border:1px solid var(--border);
+    border-radius:14px;
+
     background:rgba(255,255,255,.04);
     backdrop-filter:blur(12px);
-
 }
 
 .visitor-counter i{
-
-    font-size:1.8rem;
     color:var(--primary);
-
+    font-size:1.4rem;
 }
 
-.visitor-counter small{
-
-    display:block;
+.visitor-counter-label{
+    margin:0;
     color:var(--muted);
-    font-size:.8rem;
-
+    font-size:.9rem;
+    font-weight:500;
 }
 
-.visitor-counter strong{
-
-    display:block;
-    font-size:1.35rem;
-    color:white;
+.visitor-counter-value{
+    color:var(--text);
+    font-size:1.2rem;
     font-weight:800;
-
+    min-width:2ch;
 }
 
-@keyframes counterGlow{
-
-    0%{
-        text-shadow:
-        0 0 0px #1da1ff;
-    }
-
-    50%{
-        text-shadow:
-        0 0 10px #1da1ff,
-        0 0 20px #1da1ff,
-        0 0 30px #1da1ff;
-    }
-
-    100%{
-        text-shadow:
-        0 0 0px #1da1ff;
-    }
-
-}
-
-.loading-counter{
-    animation:
-        counterPulse 1.4s ease-in-out infinite,
-        counterGlow 1.8s ease infinite;
+.loading-counter {
+  animation:
+    counterPulse 1.4s ease-in-out infinite,
+    counterGlow 1.8s ease infinite;
 }
 
 @keyframes counterPulse {
@@ -1373,5 +1348,22 @@
   100% {
     opacity: .45;
     transform: scale(.97);
+  }
+}
+
+@keyframes counterGlow {
+  0% {
+    text-shadow: 0 0 0 #1da1ff;
+  }
+
+  50% {
+    text-shadow:
+      0 0 10px #1da1ff,
+      0 0 20px #1da1ff,
+      0 0 30px #1da1ff;
+  }
+
+  100% {
+    text-shadow: 0 0 0 #1da1ff;
   }
 }

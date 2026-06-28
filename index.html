@@ -66,15 +66,21 @@
         <a href="assets/docs/william_jurreit_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-lg">Resume</a>
       </nav>
 
-      <div class="hero-stats">
 
+     <!-- PORTFOLIO VIEW COUNTER  -->
+  <section class="hero-stats" aria-label="Portfolio statistics">
     <div class="visitor-counter">
-        <i class="bi bi-eye-fill"></i>
+        <i class="bi bi-eye-fill" aria-hidden="true"></i>
 
-        <strong id="visitorCount" class="loading-counter">Loading...</strong>
+        <span class="visitor-counter-label">Total Portfolio Visits</span>
+
+        <output
+            id="visitorCount"
+            class="visitor-counter-value loading-counter">
+            Loading...
+        </output>
     </div>
-
-</div>
+</section>
       
 
       <address class="social-links" aria-label="Social links">
