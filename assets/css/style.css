@@ -390,62 +390,26 @@
     transition:all .35s ease;
   }
 
-  /* .profile-photo-wrapper{
-
-    position:relative;
-
-    width:190px;
-    height:190px;
-
-    margin:0 auto 1.5rem;
-
-}
-
-.profile-photo-wrapper::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:-8px;
-
-    border-radius:50%;
-
-    background:
-        conic-gradient(
-            transparent 0deg,
-            transparent 300deg,
-            #19b5ff 330deg,
-            #8fdcff 345deg,
-            white 355deg,
-            transparent 360deg
-        );
-
-    filter:blur(8px);
-
-    animation:profileOrbit 4s linear infinite;
-
-} */
-
 .profile-photo-orbit {
   position: relative;
-  width: 190px;
-  height: 190px;
+  width: 15rem;
+  height: 15rem;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  overflow: visible;
 }
 
 .profile-photo {
   position: relative;
   z-index: 2;
-  width: 190px;
-  height: 190px;
+  width: 25rem;
+  height: 25rem;
   margin: 0;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid rgba(14, 165, 233, 0.45);
+  border: 6px solid rgba(14, 165, 233, 0.45);
   box-shadow:
     0 0 12px rgba(14, 165, 233, 0.45),
     0 0 28px rgba(14, 165, 233, 0.25);
@@ -516,6 +480,41 @@
   .profile-card p {
     color: var(--muted);
   }
+
+  .profile-photo-bg {
+  position: relative;
+  z-index: 2;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 6px solid rgba(14, 165, 233, 0.45);
+  box-shadow:
+    0 0 12px rgba(14, 165, 233, 0.45),
+    0 0 28px rgba(14, 165, 233, 0.25);
+}
+
+.profile-photo-front {
+  position: absolute;
+  z-index: 4;
+  width: 33rem;
+  height: auto;
+  max-width: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  object-fit: contain;
+  pointer-events: none;
+}
+.profile-card,
+.profile-card figure {
+  overflow: visible;
+}
+
+.profile-caption {
+  margin-top: 2.5rem;
+}
   
   .about-content > p {
     color: var(--muted);
