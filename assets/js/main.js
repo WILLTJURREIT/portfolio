@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     strings: [
       "clean websites.",
       "database-driven web apps.",
-      "interactive digital experiences.",
+      "interactive Web Solutions.",
       "brands that earn trust.",
-      "AI-assisted marketing systems."
+      "AI Marketing systems.",
     ],
     typeSpeed: 55,
     backSpeed: 28,

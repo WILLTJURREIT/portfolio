@@ -119,6 +119,26 @@ body {
   max-width: 760px;
 }
 
+.hero-subtitle {
+  min-height: 3.5em;
+}
+
+#typedText {
+  display: inline-block;
+  min-width: 12ch;
+}
+
+@media (max-width: 576px) {
+  .hero-subtitle {
+    min-height: 4.8em;
+  }
+
+  #typedText {
+    display: inline-block;
+    min-width: 10ch;
+  }
+}
+
 .tech-orb {
   position: relative;
   width: min(420px, 80vw);
