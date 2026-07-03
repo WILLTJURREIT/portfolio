@@ -105,7 +105,35 @@
 ========================================================== */
 @media (max-width: 992px) {
     .testimonials-grid {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+     .testimonial-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .testimonials-grid {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-header {
+        align-items: flex-start;
     }
 }
 
