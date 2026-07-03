@@ -1,33 +1,4 @@
-/* .site-nav {
-    background: rgba(6, 10, 18, 0.82);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .navbar-brand {
-    font-weight: 800;
-    color: white;
-  }
-  
-  .navbar-brand span {
-    color: var(--primary);
-  }
-  
-  .nav-link {
-    color: rgba(255, 255, 255, 0.82);
-    font-weight: 600;
-  }
-  
-  .nav-link:hover,
-  .nav-link:focus {
-    color: var(--primary);
-  }
-  
-  .navbar-nav-list {
-    justify-content: flex-end;
-  } */
-
-  /* ==========================================================
+/* ==========================================================
    NAVIGATION BAR
    ----------------------------------------------------------
    Contains:
