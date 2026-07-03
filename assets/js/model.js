@@ -79,7 +79,8 @@ const PortfolioModel = {
         solution: "I contributed to development, planning, testing, documentation, and project coordination.",
         outcome: "This project showed collaboration, Agile workflow experience, and practical CMS development ability.",
         demoUrl: "",
-        noticeUrl: "reconstruction.html",
+        noticeUrl: "",
+        caseStudyUrl: "wordpress-case-study.html",
         githubUrl: ""
       },
       {

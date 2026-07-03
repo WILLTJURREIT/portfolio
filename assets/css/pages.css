@@ -132,79 +132,66 @@
 
 
 /* ==========================================================
-   PROJECT NOTICE PAGE
+   CASE STUDY PAGE
 ========================================================== */
 
-.notice-page {
-
-    min-height: 80vh;
-
-    display: grid;
-    place-items: center;
-
-    padding: 2rem;
-
-    background: var(--bg);
+.case-study-page {
+  padding: 5rem 1rem;
 }
 
-.notice-card {
-
-    width: min(100%, 760px);
-
-    padding: 3rem;
-
-    text-align: center;
-
-    background: var(--surface-solid);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    box-shadow: var(--shadow);
+.case-study-card {
+  max-width: 1100px;
+  text-align: left;
 }
 
-.notice-icon {
-
-    width: 88px;
-    height: 88px;
-
-    display: grid;
-    place-items: center;
-
-    margin: 0 auto 1.75rem;
-
-    border-radius: 50%;
-
-    background: rgba(14,165,233,.14);
-
-    border: 1px solid rgba(14,165,233,.35);
-
-    color: var(--primary);
-
-    font-size: 2.4rem;
+.case-study-header {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-.notice-card h1 {
-
-    margin-bottom: 1rem;
-
-    font-size: clamp(2rem,5vw,3rem);
-
-    color: var(--text);
+.case-study-header h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
 }
 
-.notice-card p {
-
-    max-width: 620px;
-
-    margin: 0 auto 1rem;
-
-    color: var(--muted);
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 2rem 0;
 }
 
-.notice-card .btn {
+.case-study-grid article,
+.case-study-note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
 
-    margin-top: 1.25rem;
+.case-study-grid h2,
+.case-study-note h2 {
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
+}
 
+.case-study-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.case-study-gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .case-study-grid,
+  .case-study-gallery {
+    grid-template-columns: 1fr;
+  }
 }
