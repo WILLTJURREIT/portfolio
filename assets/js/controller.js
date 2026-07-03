@@ -86,29 +86,33 @@ const PortfolioController = {
       let hasRun = false;
   
       const runCounters = () => {
-        if (hasRun) return;
-  
-        counters.forEach(counter => {
-          const target = Number(counter.dataset.target);
-          const duration = 1400;
-          const steps = 55;
-          const increment = target / steps;
-          let current = 0;
-  
-          const timer = setInterval(() => {
-            current += increment;
-  
-            if (current >= target) {
-              counter.textContent = target.toLocaleString();
-              clearInterval(timer);
-            } else {
-              counter.textContent = Math.floor(current).toLocaleString();
-            }
-          }, duration / steps);
-        });
-  
-        hasRun = true;
-      };
+  if (hasRun) return;
+
+  counters.forEach(counter => {
+    const target = Number(counter.dataset.target);
+    const duration = 1400;
+    const steps = 55;
+    const increment = target / steps;
+    let current = 0;
+
+    const timer = setInterval(() => {
+      current += increment;
+
+      if (current >= target) {
+        counter.textContent = Number.isInteger(target)
+          ? target.toLocaleString()
+          : target.toFixed(2);
+        clearInterval(timer);
+      } else {
+        counter.textContent = Number.isInteger(target)
+          ? Math.floor(current).toLocaleString()
+          : current.toFixed(2);
+      }
+    }, duration / steps);
+  });
+
+  hasRun = true;
+};
   
       const observer = new IntersectionObserver(entries => {
         if (entries[0].isIntersecting) {
