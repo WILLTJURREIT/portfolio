@@ -2,6 +2,7 @@ const PortfolioController = {
     init() {
       PortfolioView.renderSkills(PortfolioModel.skills);
       PortfolioView.renderProjects(PortfolioModel.projects);
+      PortfolioView.renderTestimonials(PortfolioModel.testimonials);
   
       this.setupProjectFilters();
       this.setupProjectDialog();

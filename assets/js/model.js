@@ -37,6 +37,34 @@ const PortfolioModel = {
         tags: ["Agile", "Scrum", "OpenProject", "Documentation", "Leadership"]
       }
     ],
+
+    testimonials: [
+      {
+        name: "Coming Soon",
+        role: "Professional References",
+        rating: 5,
+        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      },
+      {
+        name: "Instructor",
+        role: "Web Development Program",
+        rating: 5,
+        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      },
+      {
+        name: "Instructor",
+        role: "Digital Marketing",
+        rating: 5,
+        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      },
+
+      {
+        name: "Tutor & Mentor - Ravinder",
+        role: "Programming & Web Development",
+        rating: 5,
+        quote: "Tysen approached every project with professionalism, curiosity, and a strong work ethic. He was always willing to learn and improve."
+      }
+    ],
   
     projects: [
       {

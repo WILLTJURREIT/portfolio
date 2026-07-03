@@ -49,6 +49,35 @@ const PortfolioView = {
         </article>
       `).join("");
     },
+
+    renderTestimonials(testimonials) {
+  const testimonialsGrid = document.getElementById("testimonialsGrid");
+
+  if (!testimonialsGrid) return;
+
+  testimonialsGrid.innerHTML = testimonials.map((testimonial, index) => `
+    <article class="testimonial-card" data-aos="fade-up" data-aos-delay="${index * 100}">
+      <header class="testimonial-header">
+        <div class="testimonial-icon">
+          <i class="bi bi-chat-quote-fill" aria-hidden="true"></i>
+        </div>
+
+        <div>
+          <h3>${testimonial.name}</h3>
+          <p>${testimonial.role}</p>
+        </div>
+      </header>
+
+      <p class="testimonial-stars" aria-label="${testimonial.rating} out of 5 stars">
+        ${"★".repeat(testimonial.rating)}
+      </p>
+
+      <blockquote>
+        “${testimonial.quote}”
+      </blockquote>
+    </article>
+  `).join("");
+},
   
     openProjectDialog(project) {
       const dialog = document.getElementById("projectDialog");
