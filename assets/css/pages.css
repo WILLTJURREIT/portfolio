@@ -1,0 +1,210 @@
+/* ==========================================================
+   STANDALONE PAGES
+   ----------------------------------------------------------
+   Contains:
+   • Success Page
+   • Project Notice Page
+========================================================== */
+
+
+/* ==========================================================
+   SUCCESS PAGE
+========================================================== */
+
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: var(--clr-bg-primary);
+}
+
+.success-card {
+    width: min(100%, 650px);
+    text-align: center;
+    padding: 3.5rem;
+    background: var(--clr-bg-secondary);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        inset 0 1px rgba(255,255,255,.05);
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 2.8rem;
+    font-weight: 700;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #16a34a
+        );
+
+    box-shadow:
+        0 0 35px rgba(34,197,94,.35);
+}
+
+.success-card h1 {
+    margin-bottom: 1rem;
+    color: var(--clr-text-primary);
+    font-size: clamp(2rem,4vw,2.8rem);
+}
+
+.success-card p {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    color: var(--clr-text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.success-card .btn {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .75rem;
+
+    margin-top: 1rem;
+    padding: 1rem 2.25rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0ea5e9,
+            #0284c7
+        );
+
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 1rem;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+    border: none;
+
+    transition: all .25s ease;
+
+    box-shadow:
+        0 10px 25px rgba(14,165,233,.35);
+}
+
+.success-card .btn:hover {
+
+    transform: translateY(-3px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #38bdf8,
+            #0ea5e9
+        );
+
+    box-shadow:
+        0 10px 20px rgba(14,165,233,.45);
+
+    color: #fff;
+}
+
+.success-card .btn i {
+    font-size: 1.1rem;
+}
+
+
+/* ==========================================================
+   PROJECT NOTICE PAGE
+========================================================== */
+
+.notice-page {
+
+    min-height: 80vh;
+
+    display: grid;
+    place-items: center;
+
+    padding: 2rem;
+
+    background: var(--bg);
+}
+
+.notice-card {
+
+    width: min(100%, 760px);
+
+    padding: 3rem;
+
+    text-align: center;
+
+    background: var(--surface-solid);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.notice-icon {
+
+    width: 88px;
+    height: 88px;
+
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto 1.75rem;
+
+    border-radius: 50%;
+
+    background: rgba(14,165,233,.14);
+
+    border: 1px solid rgba(14,165,233,.35);
+
+    color: var(--primary);
+
+    font-size: 2.4rem;
+}
+
+.notice-card h1 {
+
+    margin-bottom: 1rem;
+
+    font-size: clamp(2rem,5vw,3rem);
+
+    color: var(--text);
+}
+
+.notice-card p {
+
+    max-width: 620px;
+
+    margin: 0 auto 1rem;
+
+    color: var(--muted);
+}
+
+.notice-card .btn {
+
+    margin-top: 1.25rem;
+
+}

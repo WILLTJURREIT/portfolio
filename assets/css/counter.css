@@ -1,0 +1,136 @@
+/* ==========================================================
+   PORTFOLIO VIEW COUNTER
+   ----------------------------------------------------------
+   Contains:
+   • Hero statistics section
+   • Visitor counter component
+   • Loading animation
+   • Counter animations
+========================================================== */
+
+
+/* ==========================================================
+   HERO STATS
+========================================================== */
+
+.hero-stats {
+    margin-top: 2rem;
+}
+
+
+/* ==========================================================
+   VISITOR COUNTER
+========================================================== */
+
+.visitor-counter {
+
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+
+    padding: .85rem 1.2rem;
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(12px);
+
+}
+
+.visitor-counter i {
+
+    color: var(--primary);
+    font-size: 1.4rem;
+
+}
+
+.visitor-counter-label {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: .9rem;
+    font-weight: 500;
+
+}
+
+.visitor-counter-value {
+
+    color: var(--text);
+
+    font-size: 1.2rem;
+    font-weight: 800;
+
+    min-width: 2ch;
+
+}
+
+
+/* ==========================================================
+   LOADING STATE
+========================================================== */
+
+.loading-counter {
+
+    animation:
+        counterPulse 1.4s ease-in-out infinite,
+        counterGlow 1.8s ease infinite;
+
+}
+
+
+/* ==========================================================
+   COUNTER ANIMATIONS
+========================================================== */
+
+@keyframes counterPulse {
+
+    0% {
+
+        opacity: .45;
+        transform: scale(.97);
+
+    }
+
+    50% {
+
+        opacity: 1;
+        transform: scale(1.06);
+
+    }
+
+    100% {
+
+        opacity: .45;
+        transform: scale(.97);
+
+    }
+
+}
+
+@keyframes counterGlow {
+
+    0% {
+
+        text-shadow: 0 0 0 #1da1ff;
+
+    }
+
+    50% {
+
+        text-shadow:
+            0 0 10px #1da1ff,
+            0 0 20px #1da1ff,
+            0 0 30px #1da1ff;
+
+    }
+
+    100% {
+
+        text-shadow: 0 0 0 #1da1ff;
+
+    }
+
+}

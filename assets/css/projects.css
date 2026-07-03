@@ -1,0 +1,200 @@
+/* ==========================================================
+   PROJECTS SECTION
+   ----------------------------------------------------------
+   Contains:
+   • Card grid
+   • Skill/project tags
+   • Project filters
+   • Project cards
+   • Project images/placeholders
+   • Project dialog/modal
+========================================================== */
+
+
+/* ==========================================================
+   CARD GRID
+========================================================== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+}
+
+
+/* ==========================================================
+   TAGS
+========================================================== */
+
+.skill-tags,
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.skill-tags span,
+.project-tags span {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(14, 165, 233, 0.12);
+    border: 1px solid rgba(14, 165, 233, 0.28);
+    font-size: 0.85rem;
+}
+
+/* ==========================================================
+   SKILL CARDS
+========================================================== */
+
+.skill-card {
+    padding: 2rem;
+    min-height: 100%;
+}
+
+.skill-card i {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.skill-card h3 {
+    margin: 0 0 0.85rem;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.skill-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.skill-card .skill-tags {
+    margin-top: 1.4rem;
+}
+
+
+/* ==========================================================
+   PROJECT FILTERS
+========================================================== */
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.btn-filter {
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* ==========================================================
+   PROJECT CARDS
+========================================================== */
+
+.project-card {
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.project-card:hover,
+.skill-card:hover,
+.value-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(14, 165, 233, 0.5);
+}
+
+.project-card figure {
+    margin: 0;
+}
+
+.project-card figcaption {
+    position: absolute;
+    left: -9999px;
+}
+
+.project-card header,
+.project-card > p,
+.project-card footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.project-card header {
+    padding-top: 1.5rem;
+}
+
+.project-card footer {
+    padding-bottom: 1.5rem;
+}
+
+
+/* ==========================================================
+   PROJECT IMAGES
+========================================================== */
+
+.project-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.project-placeholder {
+    height: 210px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(14,165,233,0.35), rgba(15,23,42,0.95));
+    font-size: 4rem;
+    color: white;
+}
+
+
+/* ==========================================================
+   PROJECT DIALOG / MODAL
+========================================================== */
+
+.project-dialog {
+    width: min(850px, 92vw);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-solid);
+    color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+.project-dialog::backdrop {
+    background: rgba(0,0,0,0.75);
+}
+
+.project-dialog article > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-dialog button {
+    background: none;
+    border: 0;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+.dialog-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}

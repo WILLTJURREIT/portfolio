@@ -1,0 +1,100 @@
+/* ==========================================================
+   RESPONSIVE STYLES
+   ----------------------------------------------------------
+   Contains:
+   • Tablet layout adjustments
+   • Mobile layout adjustments
+   • Hero mobile stability fixes
+   • Credential page responsive rules
+========================================================== */
+
+
+/* ==========================================================
+   TABLET / MEDIUM SCREENS
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .tech-orb {
+        width: min(320px, 80vw);
+    }
+
+    .about-layout,
+    .contact-layout,
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE SCREENS
+========================================================== */
+
+@media (max-width: 576px) {
+
+    .hero-subtitle {
+        min-height: 4.8em;
+    }
+
+    #typedText {
+        display: inline-block;
+        min-width: 10ch;
+    }
+
+    .tech-orb {
+        width: 260px;
+    }
+
+    .orb-core {
+        width: 110px;
+        height: 110px;
+        font-size: 2.3rem;
+    }
+
+    .page-section {
+        padding: 75px 0;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================================
+   CREDENTIAL PAGE RESPONSIVE RULES
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .credential-card img {
+        height: 220px;
+    }
+
+}
