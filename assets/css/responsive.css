@@ -104,7 +104,22 @@
    TESTIMONIALS RULES
 ========================================================== */
 @media (max-width: 992px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================
+   TESTIMONIALS ACCESSIBILITY: REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-card,
+    .testimonial-icon,
+    .testimonial-stars i {
+        animation: none;
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
 }

@@ -69,7 +69,13 @@ const PortfolioView = {
       </header>
 
       <p class="testimonial-stars" aria-label="${testimonial.rating} out of 5 stars">
-        ${"★".repeat(testimonial.rating)}
+        ${Array.from({ length: testimonial.rating }, (_, starIndex) => `
+          <i
+            class="bi bi-star-fill"
+            style="--star-delay: ${starIndex * 0.12}s"
+            aria-hidden="true">
+          </i>
+        `).join("")}
       </p>
 
       <blockquote>
