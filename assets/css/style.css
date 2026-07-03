@@ -34,6 +34,12 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     line-height: 1.7;
   }
+
+  html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
   
   img {
     max-width: 100%;
@@ -75,7 +81,7 @@
   }
   
   .hero {
-  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: grid;
   align-items: center;
