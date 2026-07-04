@@ -114,8 +114,8 @@
 
     position:absolute;
 
-    width:25rem;
-    height:25rem;
+    width:35rem;
+    height:15rem;
 
     top:50%;
     left:50%;
@@ -125,10 +125,10 @@
     border-radius:50%;
 
     background:radial-gradient(circle,
-        rgba(56,189,248,.95) 0%,
+        rgba(253, 71, 39, 0.95) 0%,
         rgba(14,165,233,.75) 18%,
-        rgba(14,165,233,.50) 36%,
-        rgba(14,165,233,.28) 56%,
+        rgba(209, 76, 10, 0.5) 36%,
+        rgba(86, 12, 3, 0.28) 56%,
         rgba(14,165,233,.10) 72%,
         transparent 88%
     );
@@ -142,6 +142,34 @@
     animation:profileGlow 5s ease-in-out infinite alternate;
 
     pointer-events:none;
+
+}
+
+@keyframes profileGlow{
+
+    from{
+
+        transform:
+            translate(-50%,-50%)
+            scale(.95);
+
+        opacity:.80;
+
+        filter:blur(85px);
+
+    }
+
+    to{
+
+        transform:
+            translate(-50%,-50%)
+            scale(1.12);
+
+        opacity:1;
+
+        filter:blur(110px);
+
+    }
 
 }
 
