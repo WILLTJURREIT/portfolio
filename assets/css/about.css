@@ -212,8 +212,16 @@
 .about-content > p {
 
     color: var(--muted);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    line-height:1.9;
+    max-width:62ch;
+    
 
+}
+
+.about-content strong{
+    color:#67d3ff;
+    font-weight:700;
 }
 
 

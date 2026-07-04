@@ -50,6 +50,8 @@ const PortfolioView = {
       `).join("");
     },
 
+
+  
     renderTestimonials(testimonials) {
   const testimonialsGrid = document.getElementById("testimonialsGrid");
 

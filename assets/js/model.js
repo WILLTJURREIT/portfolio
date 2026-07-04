@@ -1,42 +1,24 @@
 const PortfolioModel = {
-    skills: [
-      {
-        title: "Frontend Development",
-        icon: "bi-window-stack",
-        description: "Responsive, accessible, clean interfaces built with strong structure.",
-        tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Responsive Design"]
-      },
-      {
-        title: "Backend Development",
-        icon: "bi-database-gear",
-        description: "Database-driven web application foundations and server-side logic.",
-        tags: ["PHP", "MySQL", "SQL", "Sessions", "Authentication"]
-      },
-      {
-        title: "APIs & Mapping",
-        icon: "bi-map",
-        description: "Interactive data experiences using APIs, maps, and dynamic JavaScript.",
-        tags: ["REST APIs", "Leaflet.js", "Dynamic Data", "Filtering", "Markers"]
-      },
-      {
-        title: "CMS & E-Commerce",
-        icon: "bi-shop",
-        description: "Business-focused websites, landing pages, and online storefront concepts.",
-        tags: ["WordPress", "Shopify", "Landing Pages", "Lead Generation"]
-      },
-      {
-        title: "Branding & Marketing",
-        icon: "bi-megaphone",
-        description: "Digital strategy, content systems, and brand assets designed to earn attention.",
-        tags: ["Figma", "Branding", "Content Strategy", "Social Media", "AI Content"]
-      },
-      {
-        title: "Project Execution",
-        icon: "bi-kanban",
-        description: "Planning, communication, documentation, and team coordination.",
-        tags: ["Agile", "Scrum", "OpenProject", "Documentation", "Leadership"]
-      }
-    ],
+skills: [
+  {
+    title: "Full-Stack Development",
+    icon: "bi-code-slash",
+    description: "Responsive web applications built with clean structure, database logic, and practical user-focused design.",
+    tags: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap", "GitHub"]
+  },
+  {
+    title: "CMS, E-Commerce & APIs",
+    icon: "bi-window-stack",
+    description: "Business-focused websites, online tools, content systems, and interactive data experiences.",
+    tags: ["WordPress", "Shopify", "REST APIs", "Leaflet.js", "Landing Pages", "Responsive Design"]
+  },
+  {
+    title: "Digital Marketing & Project Execution",
+    icon: "bi-graph-up-arrow",
+    description: "Strategy, content, branding, analytics thinking, documentation, and team-based project delivery.",
+    tags: ["SEO", "Figma", "Branding", "AI Content", "Agile", "OpenProject", "Leadership"]
+  }
+],
 
     testimonials: [
       {
