@@ -20,35 +20,42 @@ skills: [
   {
     title: "Technical Toolkit",
     icon: "bi-code-slash",
-    description: "Combining web development, marketing, and business strategy to build practical digital solutions.",
-    tags: [
+    description: "A blend of development, marketing, and business expertise focused on solving real-world problems",
+   tags: [
+  // Development
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "PHP",
+  "MySQL",
+  "Bootstrap",
 
-      // Development
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "PHP",
-      "MySQL",
-      "Bootstrap",
+  // CMS & E-Commerce
+  "WordPress",
+  "Shopify",
 
-      // Web Platforms & APIs
-      "WordPress",
-      "Shopify",
-      "REST APIs",
-      "Firebase",
+  // APIs & Data
+  "REST APIs",
+  "Firebase",
 
-      // Development Workflow
-      "GitHub",
-      "Agile",
-      "OpenProject",
+  // Development Tools
+  "GitHub",
+  "OpenProject",
 
-      // Marketing & Business
-      "SEO",
-      "Branding",
-      "Figma",
-      "AI Workflows"
+  // Design
+  "Figma",
 
-    ]
+  // Marketing
+  "SEO",
+  "Branding",
+  "Social Media",
+  "AI Workflows",
+
+  // Business
+  "Leadership",
+  "Project Coordination",
+  "Problem Solving"
+]
   }
 ],
 

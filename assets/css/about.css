@@ -23,6 +23,8 @@
 }
 
 
+
+
 /* ==========================================================
    PROFILE CARD
 ========================================================== */
@@ -253,6 +255,28 @@
 
 }
 
+.profile-caption strong {
+    color: var(--primary);
+}
+
+.profile-caption strong,
+.profile-caption strong span,
+#tysenJurreit {
+    color: var(--primary) !important;
+}
+
+.profile-caption .profile-title {
+    display: block;
+    color: var(--primary) !important;
+    font-weight: 700;
+}
+
+.profile-card > p,
+.profile-card > p b,
+.profile-card > p strong,
+.profile-card > p i {
+    color: var(--primary) !important;
+}
 
 /* ==========================================================
    ABOUT CONTENT
@@ -261,9 +285,10 @@
 .about-content > p {
 
     color: var(--muted);
-    font-size: 1.25rem;
-    line-height:1.9;
+    font-size: 2rem;
+    line-height:1.2;
     max-width:62ch;
+    margin:2rem;
     
 
 }
