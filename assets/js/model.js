@@ -18,22 +18,36 @@ const PortfolioModel = {
   ======================================================== */
 skills: [
   {
-    title: "Core Digital Skills",
+    title: "Technical & Business Skills",
     icon: "bi-code-slash",
-    description: "I build practical web solutions using development, CMS, marketing, and project execution skills.",
+    description: "Technical development, digital marketing, and business skills focused on building, promoting, and growing digital solutions.",
     tags: [
-      "HTML",
-      "CSS",
+
+      // Development
+      "HTML5",
+      "CSS3",
       "JavaScript",
       "PHP",
       "MySQL",
+      "Bootstrap",
+
+      // Web Platforms & APIs
       "WordPress",
       "Shopify",
-      "SEO",
-      "Figma",
-      "AI Content",
+      "REST APIs",
+      "Firebase",
+
+      // Development Workflow
+      "GitHub",
       "Agile",
-      "GitHub"
+      "OpenProject",
+
+      // Marketing & Business
+      "SEO",
+      "Branding",
+      "Figma",
+      "AI Workflows"
+
     ]
   }
 ],
@@ -47,24 +61,24 @@ skills: [
      recommendations are received.
   ======================================================== */
     testimonials: [
-      {
-        name: "Coming Soon",
-        role: "Professional References",
-        rating: 5,
-        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
-      },
-      {
-        name: "Instructor",
-        role: "Web Development Program",
-        rating: 5,
-        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
-      },
-      {
-        name: "Instructor",
-        role: "Digital Marketing",
-        rating: 5,
-        quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
-      },
+      // {
+      //   name: "Coming Soon",
+      //   role: "Professional References",
+      //   rating: 5,
+      //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      // },
+      // {
+      //   name: "Instructor",
+      //   role: "Web Development Program",
+      //   rating: 5,
+      //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      // },
+      // {
+      //   name: "Instructor",
+      //   role: "Digital Marketing",
+      //   rating: 5,
+      //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
+      // },
 
       {
         name: "Tutor & Mentor - Ravinder",

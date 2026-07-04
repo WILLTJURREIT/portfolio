@@ -1,4 +1,25 @@
+/* ==========================================================
+   PORTFOLIO CONTROLLER
+   ----------------------------------------------------------
+   Responsibilities:
+   • Initialize the portfolio
+   • Coordinate Model and View interactions
+   • Handle UI events and user interactions
+   • Manage project filtering
+   • Control project dialog behavior
+   • Toggle dark/light theme
+   • Animate statistics counters
+   • Update footer copyright year
+========================================================== */
+
 const PortfolioController = {
+
+    /* ========================================================
+     APPLICATION INITIALIZATION
+     --------------------------------------------------------
+     Renders dynamic content and initializes all interactive
+     portfolio features.
+    ======================================================== */
     init() {
       PortfolioView.renderSkills(PortfolioModel.skills);
       PortfolioView.renderProjects(PortfolioModel.projects);
@@ -11,6 +32,13 @@ const PortfolioController = {
       this.setupFooterYear();
     },
   
+
+    /* ========================================================
+     PROJECT FILTERS
+     --------------------------------------------------------
+     Filters portfolio projects based on the selected
+     category button.
+    ======================================================== */
     setupProjectFilters() {
       const filterButtons = document.querySelectorAll(".btn-filter");
   
@@ -30,10 +58,19 @@ const PortfolioController = {
       });
     },
   
+
+    /* ========================================================
+     PROJECT DIALOG
+     --------------------------------------------------------
+     Opens and closes the project details dialog.
+    ======================================================== */
     setupProjectDialog() {
       const dialog = document.getElementById("projectDialog");
       const closeButton = document.getElementById("closeDialog");
   
+      /* ------------------------------------------------------
+       Open project dialog
+      ------------------------------------------------------ */
       document.addEventListener("click", event => {
         const button = event.target.closest(".view-project");
   
@@ -46,18 +83,30 @@ const PortfolioController = {
           PortfolioView.openProjectDialog(project);
         }
       });
-  
+
       closeButton.addEventListener("click", () => {
         dialog.close();
       });
-  
+
+
+      /* ------------------------------------------------------
+       Close dialog using close button
+      ------------------------------------------------------ */
       dialog.addEventListener("click", event => {
         if (event.target === dialog) {
           dialog.close();
         }
       });
     },
-  
+
+
+
+     /* ========================================================
+     THEME TOGGLE
+     --------------------------------------------------------
+     Switches between dark and light themes while storing
+     the user's preference in localStorage.
+     ======================================================== */
     setupThemeToggle() {
       const button = document.getElementById("themeToggle");
       const savedTheme = localStorage.getItem("portfolioTheme");
@@ -81,11 +130,21 @@ const PortfolioController = {
     },
   
   
+    /* ========================================================
+     STATISTICS COUNTERS
+     --------------------------------------------------------
+     Animates the portfolio statistics when they enter
+     the viewport.
+     ======================================================== */
     setupCounters() {
       const counters = document.querySelectorAll(".counter");
       const statsSection = document.querySelector(".stats-section");
       let hasRun = false;
   
+
+      /* ------------------------------------------------------
+       Animate counters
+      ------------------------------------------------------ */
       const runCounters = () => {
   if (hasRun) return;
 
@@ -115,6 +174,10 @@ const PortfolioController = {
   hasRun = true;
 };
   
+
+      /* ------------------------------------------------------
+       Observe stats section
+      ------------------------------------------------------ */
       const observer = new IntersectionObserver(entries => {
         if (entries[0].isIntersecting) {
           runCounters();
@@ -124,6 +187,12 @@ const PortfolioController = {
       observer.observe(statsSection);
     },
   
+
+     /* ========================================================
+     FOOTER YEAR
+     --------------------------------------------------------
+     Automatically updates the copyright year.
+     ======================================================== */
     setupFooterYear() {
       document.getElementById("year").textContent = new Date().getFullYear();
     }
