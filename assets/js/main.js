@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true
   });
 
+  new Typed("#tysenJurreit", {
+    strings: [
+      "Tysen Jurreit"
+    ],
+    typeSpeed: 55,
+    backSpeed: 28,
+    backDelay: 1500,
+    loop: true
+  });
+
   PortfolioController.init();
 
   const sentinelToggle = document.querySelector(".sentinel-toggle");

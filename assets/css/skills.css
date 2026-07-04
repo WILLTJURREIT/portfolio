@@ -1,0 +1,208 @@
+/* ==========================================================
+   SKILLS SECTION
+   ----------------------------------------------------------
+   Contains:
+   • Skill tags
+   • Skill cards
+========================================================== */
+
+
+/* ==========================================================
+   CARD GRID
+========================================================== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+}
+
+
+/* ==========================================================
+   TAGS
+========================================================== */
+
+.skill-tags,
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.skill-tags span,
+.project-tags span {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(14, 165, 233, 0.12);
+    border: 1px solid rgba(14, 165, 233, 0.28);
+    font-size: 0.85rem;
+}
+
+/* ==========================================================
+   SKILL CARDS
+========================================================== */
+
+/* ==========================================================
+   SKILL CARDS
+========================================================== */
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 2rem;
+    min-height: 100%;
+}
+
+/* Animated light sweep */
+
+.skill-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        115deg,
+        transparent 35%,
+        rgba(255,255,255,.06) 50%,
+        transparent 65%
+    );
+
+    transform: translateX(-180%);
+    animation: cardShine 8s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+/* Different coloured accent */
+
+.skill-card::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-size: 300% 100%;
+
+    animation: borderFlow 10s linear infinite;
+}
+
+.skill-card:nth-child(1)::after{
+    background-image:linear-gradient(
+        90deg,
+        #0ea5e9,
+        #38bdf8,
+        #0ea5e9
+    );
+}
+
+.skill-card:nth-child(2)::after{
+    background-image:linear-gradient(
+        90deg,
+        #2563eb,
+        #60a5fa,
+        #2563eb
+    );
+}
+
+.skill-card:nth-child(3)::after{
+    background-image:linear-gradient(
+        90deg,
+        #06b6d4,
+        #67e8f9,
+        #06b6d4
+    );
+}
+
+.skill-card i {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.skill-card h3,
+.skill-card p,
+.skill-card .skill-tags{
+    position:relative;
+    z-index:2;
+}
+
+.skill-card h3 {
+    margin: 0 0 .85rem;
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.skill-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.skill-card .skill-tags{
+    margin-top:1.4rem;
+}
+
+@keyframes borderFlow{
+    from{
+        background-position:0% 50%;
+    }
+    to{
+        background-position:100% 50%;
+    }
+}
+
+@keyframes cardShine{
+
+    0%,15%{
+        transform:translateX(-180%);
+    }
+
+    45%{
+        transform:translateX(180%);
+    }
+
+    100%{
+        transform:translateX(180%);
+    }
+}
+
+/* ==========================================================
+   SINGLE SKILLS CARD LAYOUT
+========================================================== */
+
+#skillsGrid {
+    grid-template-columns: 1fr;
+}
+
+#skillsGrid .skill-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+#skillsGrid .skill-card h3 {
+    font-size: 1.7rem;
+}
+
+#skillsGrid .skill-card p {
+    max-width: 720px;
+    font-size: 1.08rem;
+}
+
+#skillsGrid .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}

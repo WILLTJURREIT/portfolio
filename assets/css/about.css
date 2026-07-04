@@ -63,6 +63,7 @@
     overflow: visible;
 }
 
+
 .profile-photo-bg {
     position: relative;
     z-index: 2;
@@ -107,21 +108,41 @@
    PROFILE ORBIT RING
 ========================================================== */
 
-.profile-photo-orbit::before {
+.profile-photo-orbit::before{
 
-    content: "";
+    content:"";
 
-    position: absolute;
-    inset: -13px;
+    position:absolute;
 
-    border-radius: 50%;
+    width:25rem;
+    height:25rem;
 
-    border: 1px solid rgba(14,165,233,.35);
+    top:50%;
+    left:50%;
 
-    box-shadow:
-        0 0 18px rgba(14,165,233,.25);
+    transform:translate(-50%, -50%);
 
-    z-index: 1;
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+        rgba(56,189,248,.95) 0%,
+        rgba(14,165,233,.75) 18%,
+        rgba(14,165,233,.50) 36%,
+        rgba(14,165,233,.28) 56%,
+        rgba(14,165,233,.10) 72%,
+        transparent 88%
+    );
+
+    filter:blur(90px);
+
+    opacity:.95;
+
+    z-index:1;
+
+    animation:profileGlow 5s ease-in-out infinite alternate;
+
+    pointer-events:none;
+
 }
 
 

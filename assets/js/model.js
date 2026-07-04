@@ -1,25 +1,51 @@
+/* ==========================================================
+   PORTFOLIO MODEL
+   ----------------------------------------------------------
+   Central data source for the portfolio.
+   View.js reads this data and dynamically renders:
+   • Skills
+   • Testimonials
+   • Projects
+========================================================== */
+
 const PortfolioModel = {
+
+
+  /* ========================================================
+     SKILLS
+     --------------------------------------------------------
+     Main capability groups displayed in the Skills section.
+  ======================================================== */
 skills: [
   {
-    title: "Full-Stack Development",
+    title: "Core Digital Skills",
     icon: "bi-code-slash",
-    description: "Responsive web applications built with clean structure, database logic, and practical user-focused design.",
-    tags: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap", "GitHub"]
-  },
-  {
-    title: "CMS, E-Commerce & APIs",
-    icon: "bi-window-stack",
-    description: "Business-focused websites, online tools, content systems, and interactive data experiences.",
-    tags: ["WordPress", "Shopify", "REST APIs", "Leaflet.js", "Landing Pages", "Responsive Design"]
-  },
-  {
-    title: "Digital Marketing & Project Execution",
-    icon: "bi-graph-up-arrow",
-    description: "Strategy, content, branding, analytics thinking, documentation, and team-based project delivery.",
-    tags: ["SEO", "Figma", "Branding", "AI Content", "Agile", "OpenProject", "Leadership"]
+    description: "I build practical web solutions using development, CMS, marketing, and project execution skills.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "WordPress",
+      "Shopify",
+      "SEO",
+      "Figma",
+      "AI Content",
+      "Agile",
+      "GitHub"
+    ]
   }
 ],
 
+
+/* ========================================================
+     TESTIMONIALS
+     --------------------------------------------------------
+     Recommendations displayed in the testimonials section.
+     Placeholder testimonials can be replaced as verified
+     recommendations are received.
+  ======================================================== */
     testimonials: [
       {
         name: "Coming Soon",
@@ -48,7 +74,19 @@ skills: [
       }
     ],
   
+
+     /* ========================================================
+     PROJECTS
+     --------------------------------------------------------
+     Portfolio project data.
+     Each project card and project dialog is generated from
+     the objects below.
+     ======================================================== */
     projects: [
+
+      /* ------------------------------------------------------
+       PROJECT 1: PHP / MYSQL WEB PLATFORM
+      ------------------------------------------------------ */
       {
         id: 1,
         title: "Mystermash Productions Web Platform",
@@ -63,6 +101,10 @@ skills: [
         demoUrl: "https://mystermashhub.free.nf/Mystermash-Productions/index.php?controller=main&action=home",
         githubUrl: ""
       },
+
+      /* ------------------------------------------------------
+       PROJECT 2: BIGFOOT TRACKER APPLICATION
+      ------------------------------------------------------ */
       {
         id: 2,
         title: "Bigfoot Tracker Application",
@@ -77,6 +119,10 @@ skills: [
         demoUrl: "https://willtjurreit.github.io/bigfoot-tracker/",
         githubUrl: "https://github.com/WILLTJURREIT/bigfoot-tracker"
       },
+
+       /* ------------------------------------------------------
+       PROJECT 3: WORDPRESS TEAM PROJECT
+      ------------------------------------------------------ */
       {
         id: 3,
         title: "Collaborative WordPress Project",
@@ -93,6 +139,10 @@ skills: [
         caseStudyUrl: "wordpress-case-study.html",
         githubUrl: ""
       },
+
+      /* ------------------------------------------------------
+       PROJECT 4: SHOPIFY / E-COMMERCE
+      ------------------------------------------------------ */
       {
         id: 4,
         title: "Shopify E-Commerce Landing Pages",
@@ -108,6 +158,10 @@ skills: [
         websiteUrl: "https://mystermash.com/",
         githubUrl: ""
       },
+
+       /* ------------------------------------------------------
+       PROJECT 5: AI BRANDING / MARKETING
+       ------------------------------------------------------ */
       {
         id: 5,
         title: "AI Branding & Marketing Campaign",
@@ -124,6 +178,10 @@ skills: [
         presentationUrl: "https://www.youtube.com/shorts/lTKpoeABc34",
         githubUrl: ""
       },
+
+      /* ------------------------------------------------------
+       PROJECT 6: AI CONTENT / SOCIAL MEDIA
+      ------------------------------------------------------ */
       {
         id: 6,
         title: "AI Content & Social Media Platform",
@@ -140,6 +198,9 @@ skills: [
         githubUrl: ""
       },
 
+      /* ------------------------------------------------------
+       PROJECT 7: JAVASCRIPT GAME DEVELOPMENT
+      ------------------------------------------------------ */
       {
         id: 7,
         title: "Interactive JavaScript Pong Game",
