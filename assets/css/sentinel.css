@@ -75,7 +75,7 @@
   right: 0;
   bottom: 6rem;
   width: min(88vw, 340px);
-  max-height: 500px;
+  max-height: 550px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);

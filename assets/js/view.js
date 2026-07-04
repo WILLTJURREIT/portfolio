@@ -1,4 +1,22 @@
+/* ==========================================================
+   PORTFOLIO VIEW
+   ----------------------------------------------------------
+   Responsibilities:
+   • Render skills
+   • Render projects
+   • Render testimonials
+   • Populate the project details dialog
+   • Display project-specific links
+========================================================== */
+
 const PortfolioView = {
+
+  /* ========================================================
+     RENDER SKILLS
+     --------------------------------------------------------
+     Dynamically creates the Skills section using the
+     skills data from PortfolioModel.
+  ======================================================== */
     renderSkills(skills) {
       const skillsGrid = document.getElementById("skillsGrid");
   
@@ -17,6 +35,13 @@ const PortfolioView = {
       `).join("");
     },
   
+
+    /* ========================================================
+     RENDER PROJECTS
+     --------------------------------------------------------
+     Dynamically builds the portfolio project cards using
+     project data from PortfolioModel.
+  ======================================================== */
     renderProjects(projects) {
       const projectsGrid = document.getElementById("projectsGrid");
   
@@ -51,7 +76,12 @@ const PortfolioView = {
     },
 
 
-  
+   /* ========================================================
+     RENDER TESTIMONIALS
+     --------------------------------------------------------
+     Displays testimonial cards with animated Bootstrap
+     star ratings.
+  ======================================================== */
     renderTestimonials(testimonials) {
   const testimonialsGrid = document.getElementById("testimonialsGrid");
 
@@ -87,6 +117,13 @@ const PortfolioView = {
   `).join("");
 },
   
+
+ /* ========================================================
+     PROJECT DETAILS DIALOG
+     --------------------------------------------------------
+     Populates and opens the modal dialog containing the
+     selected project's details, technologies, and links.
+  ======================================================== */
     openProjectDialog(project) {
       const dialog = document.getElementById("projectDialog");
       const title = document.getElementById("dialogTitle");
@@ -94,6 +131,11 @@ const PortfolioView = {
   
       title.textContent = project.title;
   
+
+      /* --------------------------------------------------------
+      Build the dialog HTML using the selected project's
+      information.
+      -------------------------------------------------------- */
       body.innerHTML = `
         <p class="lead">${project.summary}</p>
   
@@ -116,8 +158,14 @@ const PortfolioView = {
           ${project.tags.map(tag => `<span>${tag}</span>`).join("")}
         </footer>
   
+        
+
+
+
         <nav class="dialog-links" aria-label="Project links">
 
+
+      
   ${project.demoUrl ? `
     <a
       href="${project.demoUrl}"

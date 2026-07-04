@@ -3,6 +3,13 @@
 
 <!-- ==========================================================
      HEAD
+     ----------------------------------------------------------
+     Contains:
+     • Meta tags
+     • Page title and description
+     • External CSS libraries
+     • Favicon
+     • Main stylesheet import
 ========================================================== -->
 <head>
   <meta charset="UTF-8" />
@@ -22,9 +29,32 @@
 
 <!-- ==========================================================
      BODY
+     ----------------------------------------------------------
+     Contains:
+     • Header and navigation
+     • Hero
+     • Main portfolio sections
+     • Footer
+     • Project dialog
+     • Sentinel assistant
+     • JavaScript imports
 ========================================================== -->
 <body>
+
+
+
+  <!-- ========================================================
+       SITE HEADER
+       Contains fixed navigation and hero section.
+  ======================================================== -->
   <header class="site-header" id="home">
+
+
+
+
+    <!-- ======================================================
+         MAIN NAVIGATION
+    ====================================================== -->
     <nav class="site-nav navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main navigation">
       <section class="container">
         <a class="navbar-brand" href="#home">Tysen<span>J.</span></a>
@@ -51,9 +81,16 @@
     </nav>
 
 
-    <!-- ==========================================================
-     HERO SECTION
-    ========================================================== -->
+     <!-- ======================================================
+         HERO SECTION
+         Contains:
+         • Main intro text
+         • Typed.js dynamic text
+         • Primary CTA buttons
+         • Portfolio visitor counter
+         • Social links
+         • Animated technology orb
+    ====================================================== -->
     <section class="hero" aria-labelledby="hero-title">
 
    <article class="hero-content container" data-aos="fade-up">
@@ -123,13 +160,25 @@
 </section>
   </header>
 
+
+
+
+
+
+  <!-- ========================================================
+       MAIN CONTENT
+  ======================================================== -->
   <main>
 
 
 
-    <!-- ==========================================================
-     ABOUT SECTION
-     ========================================================== -->
+      <!-- ======================================================
+         ABOUT SECTION
+         Contains:
+         • Profile card
+         • Value statement
+         • Professional strength cards
+    ====================================================== -->
     <section id="about" class="page-section" aria-labelledby="about-title">
       <header class="section-header container" data-aos="fade-up">
         <p>About Me</p>
@@ -154,8 +203,8 @@
 
         <article class="about-content" data-aos="fade-left">
          <p>
-            <strong>I build business-focused web applications and digital solutions that solve real problems.</strong>
-            Backed by 10+ years of leadership and project coordination, I bring discipline, accountability, and a results-driven mindset to every project.
+            <strong>I build business-focused web applications that solve real problems..</strong>
+            With 10+ years of leadership experience, I combine technical expertise with disciplined execution and a results-driven mindset.
          </p> 
 
           <section class="value-grid" aria-label="Professional strengths">
@@ -188,9 +237,11 @@
     </section>
 
 
-    <!-- ==========================================================
-    STATS SECTION
-    ========================================================== -->
+
+   <!-- ======================================================
+         STATS SECTION
+         Animated counters are initialized in controller.js.
+    ====================================================== -->
     <section class="stats-section" aria-label="Career highlights">
       <article>
         <strong><span class="counter" data-target="10">0</span>+</strong>
@@ -213,6 +264,12 @@
       </article>
     </section>
 
+
+
+    <!-- ======================================================
+         SKILLS SECTION
+         Skills are rendered dynamically from model.js.
+    ====================================================== -->
     <section id="skills" class="page-section" aria-labelledby="skills-title">
       <header class="section-header container" data-aos="fade-up">
         <p>Skills</p>
@@ -224,9 +281,10 @@
 
 
 
-    <!-- ==========================================================
-    TESTIMONIALS SECTION
-    ========================================================== -->
+    <!-- ======================================================
+         TESTIMONIALS SECTION
+         Testimonials are rendered dynamically from model.js.
+    ====================================================== -->
     <section id="testimonials" class="page-section testimonials-section" aria-labelledby="testimonials-title">
       <header class="section-header container" data-aos="fade-up">
         <p>Testimonials</p>
@@ -239,9 +297,11 @@
 
 
 
-    <!-- ==========================================================
-     PROJECTS
-    ========================================================== -->
+    <!-- ======================================================
+         PROJECTS SECTION
+         Projects are rendered dynamically from model.js.
+         Filtering and modal behavior are handled in controller.js.
+    ====================================================== -->
     <section id="projects" class="page-section alt-section" aria-labelledby="projects-title">
       <header class="section-header container" data-aos="fade-up">
         <p>Portfolio</p>
@@ -260,9 +320,10 @@
 
 
 
-     <!-- ==========================================================
-     RESUME SECTION
-    ========================================================== -->
+     <!-- ======================================================
+         RESUME SECTION
+         Contains resume PDF link and certifications page link.
+    ====================================================== -->
     <section id="resume" class="page-section" aria-labelledby="resume-title">
       <header class="section-header container" data-aos="fade-up">
         <p>Resume & Certifications</p>
@@ -293,9 +354,13 @@
 
 
 
-     <!-- ==========================================================
-     CONTACT SECTION
-    ========================================================== -->
+       <!-- ======================================================
+         CONTACT SECTION
+         Contains:
+         • Direct contact card
+         • Formspree contact form
+         • Cloudflare Turnstile spam protection
+    ====================================================== -->
     <section id="contact" class="page-section alt-section" aria-labelledby="contact-title">
       <header class="section-header container" data-aos="fade-up">
         <p>Contact</p>
@@ -370,11 +435,21 @@
     </section>
   </main>
 
+
+
+  <!-- ========================================================
+       FOOTER
+  ======================================================== -->
   <footer class="site-footer">
     <p>© <span id="year"></span> W. Tysen Jurreit. Designed and developed using modern web technologies, industry best practices, and AI-assisted workflows.</p>
-    <p>Built with semantic HTML, Bootstrap, JavaScript, and GitHub Pages.</p>
   </footer>
 
+
+
+  <!-- ========================================================
+       PROJECT DETAILS DIALOG
+       Content is dynamically injected from view.js.
+  ======================================================== -->
   <dialog id="projectDialog" class="project-dialog">
     <article>
       <header>
@@ -387,9 +462,10 @@
   </dialog>
 
 
-  <!-- ==========================================================
-     SENTINEL CHAT WIDGET
-    ========================================================== -->
+  <!-- ========================================================
+       SENTINEL CHAT WIDGET
+       Lightweight portfolio navigation assistant.
+  ======================================================== -->
   <aside class="sentinel-chat" aria-label="Portfolio assistant">
   <button class="sentinel-toggle" type="button" aria-expanded="false" aria-controls="sentinelPanel">
     <span class="sentinel-robot" aria-hidden="true"><img src="assets/img/favicon.png" alt="Portfolio assistant"></span>
@@ -415,26 +491,46 @@
      </p>
 
       <nav class="sentinel-actions" aria-label="Portfolio assistant actions">
-        <a href="#projects">View Projects</a>
-        <a href="#resume">Open Resume</a>
-        <a href="#contact">Contact Tysen</a>
+        <a href="#about">About Tysen</a>
         <a href="#skills">View Skills</a>
-        <a href="#testimonials">View Testimonials</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#projects">View Projects</a>
+        <a href="#resume">Resume & Certifications</a>
+        <a href="#contact">Contact Tysen</a>
       </nav>
     </div>
   </section>
 </aside>
 
+<!-- ========================================================
+       JAVASCRIPT IMPORTS
+       --------------------------------------------------------
+       Order matters:
+       1. External libraries
+       2. Portfolio data/model
+       3. View rendering logic
+       4. Controller behavior
+       5. Main initialization
+       6. Visitor counter module
+       7. Turnstile spam protection
+  ======================================================== -->
+
+
+  <!-- External JS Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+
+  <!-- Portfolio JavaScript -->
   <script src="assets/js/model.js"></script>
   <script src="assets/js/view.js"></script>
   <script src="assets/js/controller.js"></script>
   <script src="assets/js/main.js"></script>
   <script type="module" src="assets/js/viewCounter.js"></script>
 
+
+  <!-- Cloudflare Turnstile -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>
