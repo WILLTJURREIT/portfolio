@@ -18,9 +18,9 @@ const PortfolioModel = {
   ======================================================== */
 skills: [
   {
-    title: "Technical & Business Skills",
+    title: "Technical Toolkit",
     icon: "bi-code-slash",
-    description: "Technical development, digital marketing, and business skills focused on building, promoting, and growing digital solutions.",
+    description: "Combining web development, marketing, and business strategy to build practical digital solutions.",
     tags: [
 
       // Development
