@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -29,10 +29,19 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare Pages folder
+        run: |
+          mkdir _site
+          cp index.html _site/
+          cp -r css _site/ 2>/dev/null || true
+          cp -r js _site/ 2>/dev/null || true
+          cp -r images _site/ 2>/dev/null || true
+          cp -r assets _site/ 2>/dev/null || true
+
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
