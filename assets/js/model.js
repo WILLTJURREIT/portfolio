@@ -78,14 +78,14 @@ skills: [
       //   name: "Instructor",
       //   role: "Web Development Program",
       //   rating: 5,
-      //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
-      // },
-      // {
-      //   name: "Instructor",
-      //   role: "Digital Marketing",
-      //   rating: 5,
-      //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
-      // },
+      //   quote: "Tysen consistently demonstrated professionalism, reliability, and a strong work ethic. He adapted quickly to new challenges, took ownership of his responsibilities, and was always eager to learn and contribute."
+      //},
+       {
+        name: "Operations Administrator - Debbi",
+         role: "Industrial Sector",
+         rating: 5,
+         quote: "Tysen consistently demonstrated professionalism, reliability, and a strong work ethic. He adapted quickly to new challenges, took ownership of his responsibilities, and was always eager to learn and contribute."
+       },
 
       {
         name: "Tutor & Mentor - Ravinder",
