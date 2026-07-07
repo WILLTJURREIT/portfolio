@@ -74,14 +74,14 @@ skills: [
       //   rating: 5,
       //   quote: "Testimonials from instructors, colleagues, and industry professionals are currently being collected and will be added here soon. References are available upon request."
       // },
-      // {
-      //   name: "Instructor",
-      //   role: "Web Development Program",
-      //   rating: 5,
-      //   quote: "Tysen consistently demonstrated professionalism, reliability, and a strong work ethic. He adapted quickly to new challenges, took ownership of his responsibilities, and was always eager to learn and contribute."
-      //},
+      {
+        name: "Instructor - Dibya",
+        role: "Digital Design & Development",
+        rating: 5,
+        quote: "Tysen consistently demonstrated a strong work ethic, a willingness to learn, and excellent problem-solving skills throughout his studies in Android App Development, PHP, Advanced WordPress, and JavaScript. He approached technical challenges with persistence, showed continuous growth as a developer, and produced thoughtful, well-executed work. I am confident that he will be a valuable asset to any web development or digital marketing team."
+      },
        {
-        name: "Operations Administrator - Debbi",
+        name: "Operations Admin - Debbi",
          role: "Industrial Sector",
          rating: 5,
          quote: "Tysen consistently demonstrated professionalism, reliability, and a strong work ethic. He adapted quickly to new challenges, took ownership of his responsibilities, and was always eager to learn and contribute."
