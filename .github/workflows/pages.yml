@@ -33,6 +33,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html _site/
+          cp certifications.html _site/
           cp -r css _site/ 2>/dev/null || true
           cp -r js _site/ 2>/dev/null || true
           cp -r images _site/ 2>/dev/null || true
